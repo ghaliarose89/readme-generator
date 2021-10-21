@@ -1,7 +1,7 @@
    
-# l;zdjbf  ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+# Pet search  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
- ## Description:   lkzjdfb  
+## Description:  find your next furry friend 
 
 ## Table of Contents:
 [Description](#description)  
@@ -13,14 +13,14 @@
 [Tests](#tests)  
 [Questions](#questions)  
 
-## Installation: dvb 
+## Installation: on zip code enter the zipcode then pick a pet (cat/dog)
 
-## Usage : 
+## Usage : when search now pressed ten cards will show up in the page with the search result based on the zipcode within 50 miles
 
-## Contributing:;lk;
+## contributing:contact me
 
-## Tests:;lk
+## Tests:
 
 ## Questions : for more informations please reach  me out through:
- * Github:ldjkgb 
- * Email:zldkjfb 
+ * Github:Ghaliarose89
+ * Email:ghaliarose89@gmail.com

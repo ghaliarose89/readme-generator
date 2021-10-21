@@ -1,15 +1,13 @@
 const inquirer = require("inquirer");
+const fs = require('fs');
+const generatePage = require ('./utils/tamplete');
+const questions =
 
-const userPrompt = userinfo => {
-
-  if (!userinfo.answers) {
-    userinfo.answers = [];
-  }
-  return inquirer.prompt([
+  [
 
     {
       type: 'input',
-      name: 'github-user',
+      name: 'githubUser',
       message: 'Please enter your Github user name (Required)',
       validate: nameInput => {
         if (nameInput) {
@@ -36,7 +34,7 @@ const userPrompt = userinfo => {
     },
     {
       type: 'input',
-      name: 'project-title',
+      name: 'projectTitle',
       message: 'What is your project name? (Required)',
       validate: nameInput => {
         if (nameInput) {
@@ -65,7 +63,7 @@ const userPrompt = userinfo => {
       type: 'input',
       name: 'installation',
       message: 'What are the steps required to install your project?',
-      //when: ({ confirmAbout }) => confirmAbout
+     
     },
 
     {
@@ -93,13 +91,22 @@ const userPrompt = userinfo => {
 
     },
 
+  ];
 
-  ])
-    .then(userinfo1 => {
-      userinfo.answers.push(userinfo1)
+
+
+const init = () => {
+  inquirer.prompt(questions)
+    .then(answers => {
       console.log(answers);
-    }
-    );
-
+      fs.writeFile('./README.md', generatePage(answers), err => {
+        if (err)
+          console.log(err);
+        else
+          console.log("done!")
+      })
+    })
+  
 };
-userPrompt();
+
+init();

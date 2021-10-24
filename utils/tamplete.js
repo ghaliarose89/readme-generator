@@ -1,5 +1,4 @@
 const getLicense =licenseType =>{
-    console.log(licenseType);
     if (licenseType === 'MIT'){
         return `  ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)`;
 

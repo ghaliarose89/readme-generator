@@ -48,7 +48,7 @@ const questions =
     {
       type: 'input',
       name: 'discription',
-      message: 'Please enter a discription of your project (Required)',
+      message: 'Please enter a description of your project  (Required)',
       validate: githubInput => {
         if (githubInput) {
           return true;
@@ -98,12 +98,11 @@ const questions =
 const init = () => {
   inquirer.prompt(questions)
     .then(answers => {
-      console.log(answers);
       fs.writeFile('./READMEExample.md', generatePage(answers), err => {
         if (err)
           console.log(err);
         else
-          console.log("Your README file has been created, Please preview it in the main directory")
+          console.log("Your README file has been created,Please preview it in the main directory under READMEExample")
       })
     })
   

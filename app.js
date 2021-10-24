@@ -75,8 +75,8 @@ const questions =
     {
       type: 'list',
       name: 'license',
-      message: 'Select your licence (you can selsect by pressing space key from your keyboard)',
-      choices: ['MIT', 'GNU', 'Mozilla', 'Apache', 'Unlicense'],
+      message: 'Select your licence (you can selsect by pressing Enter key from your keyboard)',
+      choices: ['MIT', 'GNU', 'Mozilla', 'Apache', 'IBM'],
     },
     {
       type: 'input',
@@ -99,11 +99,11 @@ const init = () => {
   inquirer.prompt(questions)
     .then(answers => {
       console.log(answers);
-      fs.writeFile('./README.md', generatePage(answers), err => {
+      fs.writeFile('./READMEExample.md', generatePage(answers), err => {
         if (err)
           console.log(err);
         else
-          console.log("done!")
+          console.log("Your README file has been created, Please preview it in the main directory")
       })
     })
   

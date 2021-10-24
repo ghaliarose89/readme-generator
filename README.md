@@ -22,9 +22,12 @@ After answering all the prompts, your README file will be named 'READMEExample.m
 Check out the [`READMEExample.md`](https://github.com/ghaliarose89/readme-generator/blob/main/README.md) in this repo as an example. 
 
 ## Usage :
+![Gif demo of README-generator](README-Generator.gif)
 
 ## Questions:
 For more information please reach  me out through:
  * Github:ghaliarose89
  * Email:ghaliarose89@gmail.com
+
+### ©️ [2021] [Ghalia Sami]
 

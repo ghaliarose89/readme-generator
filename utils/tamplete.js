@@ -1,4 +1,5 @@
 const getLicense =licenseType =>{
+    console.log(licenseType);
     if (licenseType === 'MIT'){
         return `  ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)`;
 
@@ -27,7 +28,8 @@ const generatePage = userdata => {
     return `   
 # ${userdata.projectTitle} ${getLicense(userdata.license)}
 
-## Description:  ${userdata.discription} 
+## Description: 
+ ${userdata.discription} 
 
 ## Table of Contents:
 [Installation](#installation)  
